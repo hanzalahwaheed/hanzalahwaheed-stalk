@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "@hanzalahwaheed/stalk",
+  "version": "1.0.0",
+  "description": "Display Hanzalah Waheed's details",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --esm --respawn --transpile-only src/index.ts"
+  },
+  "bin": {
+    "stalk": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Hanzalah Waheed",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "chalk": "^5.4.1",
+    "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.10.6",
+    "typescript": "^5.7.3"
+  }
+}
