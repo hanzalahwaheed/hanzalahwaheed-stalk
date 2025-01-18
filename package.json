@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@hanzalahwaheed/stalk",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Display Hanzalah Waheed's details",
   "main": "index.js",
   "scripts": {
