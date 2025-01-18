@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@hanzalahwaheed/stalk",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "Display Hanzalah Waheed's details",
   "main": "index.js",
   "scripts": {
@@ -11,13 +11,18 @@
     "dev": "ts-node-dev --esm --respawn --transpile-only src/index.ts"
   },
   "bin": {
-    "stalk": "./dist/index.js"
+    "hanzalahwaheed-stalk": "./dist/index.js"
   },
   "files": [
     "dist"
   ],
   "author": "Hanzalah Waheed",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanzalahwaheed/hanzalahwaheed-stalk.git"
+  },
+  "homepage": "https://github.com/hanzalahwaheed/hanzalahwaheed-stalk#readme",
   "dependencies": {
     "boxen": "^7.1.1",
     "chalk": "^5.4.1",
