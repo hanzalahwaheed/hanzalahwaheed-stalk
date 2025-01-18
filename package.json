@@ -1,14 +1,15 @@
 {
   "type": "module",
   "name": "@hanzalahwaheed/stalk",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Display Hanzalah Waheed's details",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node-dev --esm --respawn --transpile-only src/index.ts"
+    "dev": "ts-node-dev --esm --respawn --transpile-only src/index.ts",
+    "publish": "npm publish --access public"
   },
   "bin": {
     "hanzalahwaheed-stalk": "./dist/index.js"
