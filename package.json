@@ -9,7 +9,8 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "ts-node-dev --esm --respawn --transpile-only src/index.ts",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "release": "npm run build && npm version patch && npm publish --access public && git push && git push --tags"
   },
   "bin": {
     "hanzalahwaheed-stalk": "./dist/index.js"
