@@ -38,6 +38,12 @@ function displayBox(content: string, boxOptions?: BoxenOptions): void {
   console.log(boxen(content, defaultOptions));
 }
 
+// Add version check
+if (process.argv.includes('--version') || process.argv.includes('-v')) {
+    console.log('v' + process.env.npm_package_version);
+    process.exit(0);
+}
+
 // Main function to ask questions
 function runStalker(): void {
   inquirer.prompt(questions).then((answers) => {
