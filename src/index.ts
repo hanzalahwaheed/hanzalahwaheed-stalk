@@ -107,3 +107,8 @@ export function startCLI(): void {
 
 // Change the direct call to export
 export default startCLI;
+
+// Call the function when running as CLI
+if (import.meta.url === `file://${process.argv[1]}`) {
+    startCLI();
+}
