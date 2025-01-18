@@ -39,7 +39,7 @@ function displayBox(content: string, boxOptions?: BoxenOptions): void {
 }
 
 // Main function to ask questions
-function askQuestions(): void {
+function runStalker(): void {
   inquirer.prompt(questions).then((answers) => {
     let output = ""; // Store the output to be displayed in the box
 
@@ -89,7 +89,7 @@ ${chalk.dim("Description:")} A group-based decision-making app using WebSockets.
       ])
       .then((response) => {
         if (response.askAgain) {
-          askQuestions(); // Call the function recursively
+          runStalker(); // Call the function recursively
         } else {
           console.log("Thanks for your interest!");
         }
@@ -97,18 +97,4 @@ ${chalk.dim("Description:")} A group-based decision-making app using WebSockets.
   });
 }
 
-// // Start the CLI process locally
-// askQuestions();
-
-// Add shebang and export the main function
-export function startCLI(): void {
-  askQuestions();
-}
-
-// Change the direct call to export
-export default startCLI;
-
-// Call the function when running as CLI
-if (import.meta.url === `file://${process.argv[1]}`) {
-    startCLI();
-}
+runStalker();
