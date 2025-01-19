@@ -40,9 +40,13 @@ function displayBox(content: string, boxOptions?: BoxenOptions): void {
 
 // Add version check
 if (process.argv.includes('--version') || process.argv.includes('-v')) {
-  const packageJson = require('../package.json');
-  console.log('v' + packageJson.version);
-  process.exit(0);
+  (async () => {
+    const packageJson = await import('../package.json', {
+      assert: { type: 'json' }
+    });
+    console.log('v' + packageJson.default.version);
+    process.exit(0);
+  })();
 }
 
 // Main function to ask questions

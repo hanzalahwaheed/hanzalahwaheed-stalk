@@ -5,7 +5,8 @@
     "strict": true,
     "esModuleInterop": true,
     "outDir": "./dist",
-    "moduleResolution": "nodenext"
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true
   },
   "include": ["src/**/*"]
 }
