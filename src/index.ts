@@ -59,14 +59,14 @@ function runStalker(): void {
         output = `
 ${chalk.bold.green("Name:")} Hanzalah Waheed
 ${chalk.bold.green("Profession:")} Full Stack Developer
-${chalk.bold.green("Location:")} [Your Location]
+${chalk.bold.green("Location:")} Bengaluru, India
         `;
         break;
 
       case "Social Media":
         output = `
-${chalk.bold.blue("GitHub:")} https://github.com/your-profile
-${chalk.bold.blue("LinkedIn:")} https://linkedin.com/in/your-profile
+${chalk.bold.blue("GitHub:")} https://github.com/hanzalahwaheed
+${chalk.bold.blue("LinkedIn:")} https://linkedin.com/in/hanzalahwaheed
         `;
         break;
 
